@@ -22,8 +22,8 @@
 
 实现了一个完整的黄页系统
 
-![image-20230603210924760](/Users/jessytsui/PycharmProjects/迷你朝歌/static/webpage.png)
+![image-20230603210924760](./static/webpage.png)
 
 
 
-![image-123](/Users/jessytsui/PycharmProjects/迷你朝歌/static/product.png)
+![image-123](./static/product.png)
