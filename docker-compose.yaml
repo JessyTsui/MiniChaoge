@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    platform: linux/amd64
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - data:/var/lib/mysql
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "3306:3306"
+    command: [ "--pid-file=/var/lib/mysql/mysql.pid", "--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+volumes:
+  data:
